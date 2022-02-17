@@ -24,27 +24,30 @@ export default function Hero() {
           <h1 className="main-title">Ákos Szarvák.</h1>
           <p>
             I'm a Software Developer based in Hungary, focusing on building
-            websites, apps and games. I'm currently working on my startup, but
-            open to new opportunities.
+            websites, apps and games. I'm currently working on a SaaS product
+            and a UI-kit, but I'm open to new opportunities.
           </p>{" "}
           <div className="socials">
             <ul>
               <li>
-                <Link to="/">
+                <a target="_blank" href="www.linkedin.com/in/akos-szarvak">
                   <FaLinkedin style={style} alt="linkedIn"></FaLinkedin>
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/">
+                <a target="_blank" href="https://github.com/akosszarvak">
                   {" "}
                   <FaGithub style={style} alt="github"></FaGithub>
-                </Link>
+                </a>
               </li>
               <li>
                 {" "}
-                <Link to="/">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/akos_szarvak/"
+                >
                   <FaInstagram style={style} alt="instagram"></FaInstagram>{" "}
-                </Link>
+                </a>
               </li>
             </ul>{" "}
           </div>{" "}

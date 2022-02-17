@@ -4,7 +4,7 @@ import Project from "../Project/Project";
 import About from "../About/About";
 import "./Home.scss";
 
-import { projectObjOne, projectObjTwo } from "../Data/Data";
+import { projectObjOne, projectObjTwo, projectObjThree } from "../Data/Data";
 import ContactMe from "../ContactMe/ContactMe";
 import Contact from "../ContactMe/Contact";
 
@@ -15,7 +15,7 @@ export default function Home() {
       <div className="outer">
         <Project {...projectObjOne}></Project>
         <Project {...projectObjTwo}></Project>
-        <Project {...projectObjOne}></Project>
+        <Project {...projectObjThree}></Project>
       </div>
       <About></About>
       <Contact></Contact>

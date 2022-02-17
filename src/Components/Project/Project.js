@@ -12,6 +12,8 @@ export default function Project({
   button1,
   button2,
   img,
+  link1,
+  link2,
   alt,
   imgStart,
 }) {
@@ -26,19 +28,19 @@ export default function Project({
             <p className="desc">{description}</p>
             <div className="button-div">
               {" "}
-              <Link to="/">
+              <a target="_blank" href={link1}>
                 <Button style="btn-transparent">
                   {" "}
                   <FaExternalLinkAlt style={style} />
                   {button1}
                 </Button>
-              </Link>
-              <Link to="/">
+              </a>
+              <a target="_blank" href={link2}>
                 <Button style="btn-transparent">
                   <FaExternalLinkAlt style={style} />
                   {button2}
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
         </div>

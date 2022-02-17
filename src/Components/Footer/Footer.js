@@ -10,21 +10,25 @@ export default function Footer() {
         <div className="footer-left-col">
           <ul>
             <li>
-              <Link to="/">
+              <a
+                target="_blank"
+                href="https://linkedin.com/in/akos-szarvak
+"
+              >
                 <FaLinkedin style={style}></FaLinkedin>
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/">
+              <a target="_blank" href="https://github.com/akosszarvak">
                 {" "}
                 <FaGithub style={style}></FaGithub>
-              </Link>
+              </a>
             </li>
             <li>
               {" "}
-              <Link to="/">
+              <a target="_blank" href="https://www.instagram.com/akos_szarvak/">
                 <FaInstagram style={style}></FaInstagram>{" "}
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
