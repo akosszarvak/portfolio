@@ -1,0 +1,87 @@
+.about {
+  height: 40%;
+  margin: 4rem auto;
+}
+
+.about .about-right-col {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 1.2rem;
+}
+
+.about .about-right-col h1 {
+  line-height: 5rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.about .about-right-col p {
+  width: 80%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.about .about-left-col {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.about .about-left-col h1 {
+  line-height: 5rem;
+  margin: 2rem 0;
+}
+
+.about .about-left-col ul {
+  height: 25%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.about .about-left-col ul li {
+  width: 33%;
+  float: left;
+}
+
+.contact {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.contact h1 {
+  text-align: center;
+  margin: 2rem 2rem;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  width: 50%;
+  margin-left: 3rem;
+}
+/*# sourceMappingURL=About.css.map */

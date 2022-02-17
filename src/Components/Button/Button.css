@@ -1,0 +1,89 @@
+.btn {
+  padding: 8px 20px;
+  border-radius: 14px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: var(--navy);
+  color: var(--white);
+}
+
+.btn-primary-drk {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.btn-primary-drk:hover {
+  background-color: var(--white);
+  color: var(--navy);
+}
+
+.btn-transparent {
+  opacity: 0.9;
+  padding: 4px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  background-color: var(--darkGrey);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--black);
+  padding: 8px 20px;
+  border: 1px solid var(--primary);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.no-border {
+  border: none;
+  color: var(--navy);
+}
+
+.no-border:hover {
+  background-color: var(--grey);
+  color: var(--black);
+}
+
+.btn-medium {
+  padding: 8px 20px;
+  font-size: 18px;
+}
+
+.btn-large {
+  padding: 12px 26px;
+  font-size: 20px;
+}
+
+.btn-mobile {
+  text-align: center;
+  border-radius: 4px;
+  width: 80%;
+  text-decoration: none;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: var(--white);
+  padding: 14px 20px;
+  border: 1px solid var(--white);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.btn--wide {
+  padding: 12px 64px;
+  font-size: 20px;
+}
+/*# sourceMappingURL=Button.css.map */

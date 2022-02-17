@@ -1,0 +1,43 @@
+.outer {
+  background-color: var(--dark);
+}
+
+.main {
+  color: var(--white);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 40vh;
+}
+
+.main .contact-left-col {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1.8rem;
+}
+
+.main .contact-left-col h1 {
+  font-size: 2rem;
+  margin-bottom: 1.8rem;
+}
+
+.main .contact-right-col {
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+    padding: 10px 20px;
+  }
+}
+/*# sourceMappingURL=Contact.css.map */

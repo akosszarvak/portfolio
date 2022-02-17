@@ -1,0 +1,36 @@
+.footer {
+  border-top: 1px solid grey;
+  width: 100%;
+  padding: 1rem 2rem;
+  opacity: 0.7;
+  color: var(--white);
+  .footer-left-col {
+    width: 100%;
+
+    ul {
+      list-style: none;
+      display: flex;
+      li {
+        margin-right: 1rem;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .footer-right-col {
+    width: 100%;
+    text-align: right;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    .footer-left-col {
+      width: 40%;
+    }
+    .footer-right-col {
+      width: 40%;
+    }
+  }
+}

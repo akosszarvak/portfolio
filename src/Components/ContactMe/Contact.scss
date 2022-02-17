@@ -1,0 +1,32 @@
+.outer {
+  background-color: var(--dark);
+}
+
+.main {
+  color: var(--white);
+  flex-direction: column;
+  height: 40vh;
+
+  .contact-left-col {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1.8rem;
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1.8rem;
+    }
+  }
+  .contact-right-col {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 10px 20px;
+  }
+}
