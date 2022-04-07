@@ -1,6 +1,6 @@
 .btn {
   padding: 8px 20px;
-  border-radius: 14px;
+  border-radius: 4px;
   outline: none;
   border: none;
   cursor: pointer;
@@ -8,11 +8,11 @@
 }
 
 .btn-primary {
-  background-color: var(--primary);
+  background-color: var(--cta);
   color: var(--white);
 
   &:hover {
-    background-color: var(--navy);
+    background-color: var(--cta-dark);
     color: var(--white);
   }
 }
@@ -27,14 +27,13 @@
   }
 }
 .btn-transparent {
-  opacity: 0.9;
   padding: 4px 10px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
 
   &:hover {
-    background-color: var(--darkGrey);
+    background-color: var(--grey);
   }
 }
 .btn-outline {

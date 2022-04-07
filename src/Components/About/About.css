@@ -21,6 +21,13 @@
   text-align: center;
 }
 
+.about .about-right-col h3 {
+  width: 80%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .about .about-right-col p {
   width: 80%;
   -ms-flex-item-align: center;

@@ -1,7 +1,5 @@
 .project-container {
-  gap: 2rem;
-  margin-bottom: 3rem;
-  padding: 10px 10px;
+  padding: 15px 10px;
 }
 
 .row {
@@ -12,36 +10,35 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: #f1f1f1;
-  padding: 40px 60px;
+  background-color: var(--main);
+  padding: 0 0 0 40px;
   margin: 10px 10px;
-  gap: 5rem;
-  border-radius: 12px;
-  -webkit-transition: all 0.8s ease-in-out;
-  transition: all 0.8s ease-in-out;
+  border-radius: 4px;
 }
 
 .row .left-col-proj {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 40%;
-  margin-bottom: 2rem;
+  width: 55%;
+  margin: 0;
 }
 
 .row .left-col-proj .top-line {
   line-height: 18px;
   text-transform: uppercase;
-  opacity: 0.9;
+  opacity: 0.85;
 }
 
 .row .left-col-proj h1 {
   font-size: 2.8rem;
+  line-height: 3rem;
+  margin: 0.4rem 0;
 }
 
 .row .left-col-proj p {
   font-size: 1.1rem;
-  margin-bottom: 1.3rem;
+  margin-bottom: 0.3rem;
 }
 
 .row .left-col-proj .button-div {
@@ -54,27 +51,32 @@
           flex-direction: column;
   margin: auto;
   margin-right: 25px;
+  margin-top: 20px;
+}
+
+.row .left-col-proj .button-div a {
+  margin-bottom: 5px;
 }
 
 .row .right-col-proj {
-  justify-self: flex-end;
-  padding-right: 0;
-}
-
-.row .right-col-proj .image {
-  border-radius: 8px;
-  padding-right: 0;
-  max-width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
-  max-height: 500px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   height: 100%;
 }
 
-.row:hover .right-col-proj .image {
-  -webkit-transform: translate(0.3rem, -1rem);
-          transform: translate(0.3rem, -1rem);
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
+.row .right-col-proj .image {
+  padding-right: 0;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  max-width: 600px;
+  width: 100%;
+  max-height: 350px;
+  height: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -87,10 +89,10 @@
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 0;
-    padding: 10px 20px;
+    padding: 10px 10px;
   }
   .project-container .row .left-col-proj {
-    margin-top: 1rem;
+    margin: 1rem 0;
     padding-top: 1rem;
     width: 100%;
     height: 100%;

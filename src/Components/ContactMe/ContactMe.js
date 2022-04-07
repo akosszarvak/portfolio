@@ -9,25 +9,34 @@ export default function ContactMe() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm().then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
+    emailjs
+      .sendForm(
+        "service_lu7hwfi",
+        "template_py1v7ko",
+        e.target,
+        "user_07nOMm1ZgIW59BHm6LZ0Y"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
     e.target.reset();
   };
   return (
     <form className="form" ref={form} onSubmit={sendEmail}>
       <p>Fill out this form and I'll get back to you ASAP!</p>
       <label className="label">Name*</label>
-      <input className="input" type="text" name="user_name" />
+      <input className="input" type="text" name="name" />
+      <label className="label">Subject*</label>
+      <input className="input" type="text" name="subject" />
       <label className="label">Email*</label>
-      <input className="input" type="email" name="user_email" />
+      <input className="input" type="email" name="email" />
 
-      <label className="input" className="label">
+      <label className="label" label="label">
         Message*
       </label>
       <textarea

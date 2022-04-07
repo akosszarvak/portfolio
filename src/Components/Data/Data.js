@@ -7,6 +7,8 @@ import expense from "./expense-tracker.png";
 import huddle from "./huddle_screen.png";
 import loruki from "./loruki_screen.png";
 import blog from "./react_blog_screen.png";
+import cryptoNews from "./crypto-news2.png";
+import shogi from "./shogi.png";
 
 export const projectObjOne = {
   topLine: "reactjs sass firebase",
@@ -38,7 +40,7 @@ export const projectObjThree = {
   topLine: "reactjs nodejs mongodb",
   headLine: "Expense tracker",
   description:
-    "An expense tracker app written in Reactjs on the front, and NodeJS on the backend. It uses the Context API on the front to pass data and a reducer.The app saves the data to a MongoDB database. (Currently not hosted)",
+    "An expense tracker app written in Reactjs on the front, and NodeJS on the backend. It uses the Context API on the front to pass data and a reducer.The app saves the data to a MongoDB database.",
   button1: "visit website",
   button2: "view code",
   link1: "",
@@ -69,5 +71,31 @@ export const projectObjFive = {
   link1: "https://nostalgic-payne-fe0215.netlify.app",
   link2: "https://github.com/akosszarvak/huddle",
   img: huddle,
+  alt: "screenshot",
+};
+
+export const projectObjSix = {
+  topLine: "reactjs contextapi",
+  headLine: "Board Game (WIP)",
+  description:
+    "A framework for the board game Shogi, using Context API and React Hooks for game logic",
+  button1: "visit website",
+  button2: "view code",
+  link1: "https://shogi-691cf.web.app/",
+  link2: "https://github.com/akosszarvak/project-shogi",
+  img: shogi,
+  alt: "screenshot",
+};
+
+export const projectObjSeven = {
+  topLine: "reactjs redux-toolkit antd ",
+  headLine: "Crypto News",
+  description:
+    "A news site that uses the Coinranking API to fetch the latest news about cryptocurrencies with Redux-Toolkit and Ant Design",
+  button1: "visit website",
+  button2: "view code",
+  link1: "https://romantic-carson-6ad7a3.netlify.app",
+  link2: "https://github.com/akosszarvak/crypto-news",
+  img: cryptoNews,
   alt: "screenshot",
 };

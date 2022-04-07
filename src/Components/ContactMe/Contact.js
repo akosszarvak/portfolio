@@ -21,7 +21,7 @@ export default function Contact() {
           {" "}
           <Button
             onClick={() => setButtonPopup(true)}
-            style="btn btn-primary-drk btn-large"
+            style="btn btn-primary btn-large"
           >
             {" "}
             open popup

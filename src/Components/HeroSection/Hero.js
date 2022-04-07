@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 import { Button } from "../Button/Button";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 
-import profil from "./profil.jpg";
-import portrait from "./portrait.png";
+import illustration from "../../assets/programmer.svg";
 import "./Hero.scss";
 import "../../App.scss";
 
@@ -14,18 +13,14 @@ export default function Hero() {
 
   return (
     <div className="hero-container container flex">
-      {" "}
       <div className="left-col">
-        <img className="image" src={portrait} alt="profil picture" />
-      </div>
-      <div className="right-col">
+        {/* <img className="image" src={portrait} alt="profil picture" /> */}
+
         <div className="wrapper">
-          <h2 className="main-title">Hi, I am</h2>
-          <h1 className="main-title">Ákos Szarvák.</h1>
+          <h3>Hi, I'm Ákos Szarvák</h3>
+          <h1 className="main-title">Freelance Developer</h1>
           <p>
-            I'm a Software Developer based in Hungary, focusing on building
-            websites, apps and games. I'm currently working on a SaaS product
-            and a UI-kit, but I'm open to new opportunities.
+            Helping people turn their ideas into sites and apps that work.
           </p>{" "}
           <div className="socials">
             <ul>
@@ -53,10 +48,13 @@ export default function Hero() {
           </div>{" "}
           <Link to="/projects">
             {" "}
-            <Button style="btn btn-primary btn-medium"> view my work</Button>
+            <Button style="btn btn-primary btn-medium"> VIEW MY WORK</Button>
           </Link>
-          {/* <Button>WRITE ME</Button> */}
         </div>
+      </div>
+
+      <div className="right-col">
+        <img className="image" src={illustration} alt="profil picture" />
       </div>
     </div>
   );

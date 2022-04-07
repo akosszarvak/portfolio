@@ -4,7 +4,13 @@ import Project from "../Project/Project";
 import About from "../About/About";
 import "./Home.scss";
 
-import { projectObjOne, projectObjTwo, projectObjThree } from "../Data/Data";
+import {
+  projectObjOne,
+  projectObjTwo,
+  projectObjThree,
+  projectObjSix,
+  projectObjSeven,
+} from "../Data/Data";
 import ContactMe from "../ContactMe/ContactMe";
 import Contact from "../ContactMe/Contact";
 
@@ -13,12 +19,12 @@ export default function Home() {
     <>
       <Hero></Hero>
       <div className="outer">
-        <Project {...projectObjOne}></Project>
-        <Project {...projectObjTwo}></Project>
+        <Project {...projectObjSeven}></Project>
         <Project {...projectObjThree}></Project>
+        <Project {...projectObjSix}></Project>
       </div>
       <About></About>
-      <Contact></Contact>
+      <Contact id={"contact"}></Contact>
     </>
   );
 }

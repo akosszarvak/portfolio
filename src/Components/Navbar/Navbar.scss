@@ -1,6 +1,5 @@
 .navbar {
-  // background: #1c2237;
-  background: var(--dark);
+  background: var(--main);
 
   height: 80px;
   display: flex;
@@ -26,7 +25,7 @@
 }
 
 .navbar-logo {
-  color: var(--white);
+  color: var(--secondary);
   justify-self: center;
   cursor: pointer;
   text-decoration: none;
@@ -53,7 +52,7 @@
 }
 
 .nav-links {
-  color: var(--white);
+  color: var(--secondary);
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -67,7 +66,7 @@
 }
 
 .fa-bars {
-  color: var(--white);
+  color: var(--secondary);
 }
 
 .menu-icon {
@@ -81,7 +80,7 @@
   .menu-icon {
     display: contents;
     /*  */
-    color: var(--white);
+    color: var(--secondary);
   }
   .navbar {
     padding: 5 5px;
@@ -101,7 +100,7 @@
   }
 
   .nav-menu.active {
-    background: var(--dark);
+    background: var(--main);
     left: 0;
     opacity: 1;
     transition: all 0.6s ease;
@@ -109,7 +108,7 @@
   }
 
   .nav-links {
-    color: var(--white);
+    color: var(--secondary);
     text-align: center;
     padding: 2rem;
     width: 100%;
