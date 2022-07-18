@@ -1,5 +1,5 @@
 import React from "react";
-import Project from "../Project/Project";
+import Project from "../Components/Project/Project";
 import {
   projectObjOne,
   projectObjTwo,

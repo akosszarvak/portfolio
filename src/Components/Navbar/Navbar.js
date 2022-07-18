@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import "./Navbar.scss";
-
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { MdFingerprint } from "react-icons/md";
 import { Button } from "../Button/Button";
+import { motion } from "framer-motion";
+import "./Navbar.scss";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -23,7 +23,12 @@ function Navbar() {
   window.addEventListener("resize", showButton);
 
   return (
-    <div className="navbar">
+    <motion.div
+      className="navbar"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.2, duration: 0.6 }}
+    >
       <div className="nav-container">
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
           {/* <MdFingerprint className="navbar-icon" /> */}
@@ -49,7 +54,7 @@ function Navbar() {
           contact
         </Link> */}
       </div>
-    </div>
+    </motion.div>
   );
 }
 

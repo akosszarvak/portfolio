@@ -1,8 +1,8 @@
 import React from "react";
-
 import { Link } from "react-router-dom";
 import { Button } from "../Button/Button";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 import illustration from "../../assets/programmer.svg";
 import "./Hero.scss";
@@ -14,15 +14,35 @@ export default function Hero() {
   return (
     <div className="hero-container container flex">
       <div className="left-col">
-        {/* <img className="image" src={portrait} alt="profil picture" /> */}
-
         <div className="wrapper">
-          <h3>Hi, I'm Ákos Szarvák</h3>
-          <h1 className="main-title">Freelance Developer</h1>
-          <p>
+          <motion.h3
+            initial={{ x: -2000, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ type: "spring", duration: 1 }}
+          >
+            Hi, I'm Ákos Szarvák
+          </motion.h3>
+          <motion.h1
+            className="main-title"
+            initial={{ x: -2000, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ type: "spring", duration: 1 }}
+          >
+            Freelance Developer
+          </motion.h1>
+          <motion.p
+            initial={{ x: -2000 }}
+            animate={{ x: 0 }}
+            transition={{ type: "spring", duration: 0.7, delay: 0.6 }}
+          >
             Helping people turn their ideas into sites and apps that work.
-          </p>{" "}
-          <div className="socials">
+          </motion.p>{" "}
+          <motion.div
+            className="socials"
+            initial={{ x: -2000 }}
+            animate={{ x: 0 }}
+            transition={{ type: "spring", duration: 0.7, delay: 0.6 }}
+          >
             <ul>
               <li>
                 <a target="_blank" href="www.linkedin.com/in/akos-szarvak">
@@ -45,17 +65,27 @@ export default function Hero() {
                 </a>
               </li>
             </ul>{" "}
-          </div>{" "}
+          </motion.div>{" "}
           <Link to="/projects">
-            {" "}
-            <Button style="btn btn-primary btn-medium"> VIEW MY WORK</Button>
+            <motion.div
+              initial={{ x: -2000 }}
+              animate={{ x: 0 }}
+              transition={{ type: "spring", duration: 0.7, delay: 0.7 }}
+            >
+              <Button style="btn btn-primary btn-medium"> VIEW MY WORK</Button>
+            </motion.div>
           </Link>
         </div>
       </div>
 
-      <div className="right-col">
+      <motion.div
+        className="right-col"
+        initial={{ x: 2000, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ type: "spring", duration: 1.6, stiffness: 80 }}
+      >
         <img className="image" src={illustration} alt="profil picture" />
-      </div>
+      </motion.div>
     </div>
   );
 }
