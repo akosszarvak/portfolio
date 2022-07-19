@@ -4,6 +4,7 @@ import Projects from "./Pages/Projects";
 import Home from "./Pages/Home";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
+import AnimatedRoutes from "./Components/AnimatedRoutes/AnimatedRoutes";
 
 import "./App.scss";
 
@@ -11,10 +12,7 @@ function App() {
   return (
     <Router>
       <Navbar></Navbar>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-      </Routes>
+      <AnimatedRoutes />
       <Footer></Footer>
     </Router>
   );

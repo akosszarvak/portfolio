@@ -82,7 +82,7 @@ export default function Hero() {
         className="right-col"
         initial={{ x: 2000, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ type: "spring", duration: 1.6, stiffness: 80 }}
+        transition={{ type: "spring", duration: 1.6 }}
       >
         <img className="image" src={illustration} alt="profil picture" />
       </motion.div>

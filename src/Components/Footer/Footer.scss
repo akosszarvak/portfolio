@@ -1,9 +1,11 @@
 .footer {
   border-top: 1px solid grey;
+
   width: 100%;
   padding: 1rem 2rem;
   opacity: 0.7;
   color: var(--white);
+  z-index: 2;
   .footer-left-col {
     width: 100%;
 

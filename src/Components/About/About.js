@@ -10,13 +10,20 @@ import {
   FaHashtag,
 } from "react-icons/fa";
 import { SiCsharp } from "react-icons/si";
+import { motion } from "framer-motion";
 
 export default function About() {
   const style = { color: "black", fontSize: "3em" };
   return (
     <>
       <div className="about container flex">
-        <div className="about-right-col">
+        <motion.div
+          className="about-right-col"
+          initial={{ x: 0, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
           <h1>About me</h1>
           <h3>software developer. entrepreneur.</h3>
           <p>I enjoy working on projects that add value to daily life.</p>
@@ -25,8 +32,14 @@ export default function About() {
             solving. I build websites, apps and games. I'm currently working on
             a SaaS product, but I'm open to new opportunities.
           </p>{" "}
-        </div>
-        <div className="about-left-col">
+        </motion.div>
+        <motion.div
+          className="about-left-col"
+          initial={{ x: 0, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
           <h1>My Toolbox</h1>
 
           <ul className="skills">
@@ -60,7 +73,7 @@ export default function About() {
               Laravel
             </li>
           </ul>
-        </div>
+        </motion.div>
       </div>
     </>
   );

@@ -1,8 +1,9 @@
-import react, { useState } from "react";
+import React, { useState } from "react";
 import { Button } from "../Button/Button";
 import Popup from "../Popup/Popup";
 import ContactMe from "./ContactMe";
 import "./Contact.scss";
+
 export default function Contact() {
   const [buttonPopup, setButtonPopup] = useState(false);
 
@@ -29,7 +30,7 @@ export default function Contact() {
         </div>
       </div>
       <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
-        <ContactMe></ContactMe>
+        <ContactMe />
       </Popup>
     </div>
   );
